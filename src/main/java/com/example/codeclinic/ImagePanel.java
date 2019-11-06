@@ -1,7 +1,10 @@
 package com.example.codeclinic;
 
+import org.openimaj.image.processing.face.d
+
 import javax.swing.*;
 import java.awt.*;
+
 
 // is used to display our input image
 public class ImagePanel extends JPanel {

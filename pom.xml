@@ -10,7 +10,7 @@
 
     <dependencies>
         <dependency>
-            <artifactId>image-processing</artifactId>
+            <artifactId>faces</artifactId>
             <groupId>org.openimaj</groupId>
             <version>1.3.9</version>
             <scope>compile</scope>
