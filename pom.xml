@@ -7,7 +7,12 @@
     <groupId>com.code-clinic</groupId>
     <artifactId>FacialRecognition</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>jar</packaging>
+    <name>Detect</name>
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
     <dependencies>
         <dependency>
             <artifactId>faces</artifactId>
@@ -16,6 +21,41 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.example.codeclinic.FaceDetector</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2.1</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.example.codeclinic.FaceDetector</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
 
-    
+        </plugins>
+
+
+    </build>
+
+
+
+
 </project>

@@ -1,7 +1,5 @@
 package com.example.codeclinic;
 
-import org.openimaj.image.processing.face.d
-
 import javax.swing.*;
 import java.awt.*;
 
